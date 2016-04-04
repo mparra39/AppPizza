@@ -350,13 +350,6 @@
                                     <constraint firstItem="gEW-dC-Nmi" firstAttribute="top" secondItem="Zmo-zU-1WM" secondAttribute="top" constant="20" id="ywv-cf-4y3"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zG5-RS-rFh">
-                                <rect key="frame" x="269" y="311" width="62" height="30"/>
-                                <state key="normal" title="Regresar"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="UKm-7C-hph"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gs7-Ab-iCm">
                                 <rect key="frame" x="263" y="349" width="75" height="30"/>
                                 <state key="normal" title="Ver pedido"/>
@@ -368,14 +361,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Kbb-Vn-Ptr" firstAttribute="centerX" secondItem="jb0-td-pYk" secondAttribute="centerX" id="1Gg-Fs-7dJ"/>
-                            <constraint firstItem="zG5-RS-rFh" firstAttribute="centerX" secondItem="jb0-td-pYk" secondAttribute="centerX" id="Gh4-BD-6eO"/>
                             <constraint firstItem="Kbb-Vn-Ptr" firstAttribute="top" secondItem="p6e-Xa-Eln" secondAttribute="bottom" constant="68" id="MNQ-si-Ica"/>
+                            <constraint firstItem="Gs7-Ab-iCm" firstAttribute="top" secondItem="Zmo-zU-1WM" secondAttribute="bottom" constant="58" id="S9k-js-biL"/>
                             <constraint firstItem="Zmo-zU-1WM" firstAttribute="centerX" secondItem="jb0-td-pYk" secondAttribute="centerX" constant="-12" id="UCj-IP-Zxz"/>
                             <constraint firstItem="Zmo-zU-1WM" firstAttribute="top" secondItem="Kbb-Vn-Ptr" secondAttribute="bottom" constant="10" id="e2l-ZN-uQU"/>
                             <constraint firstItem="Gs7-Ab-iCm" firstAttribute="centerX" secondItem="jb0-td-pYk" secondAttribute="centerX" id="ljF-kA-2CE"/>
                             <constraint firstItem="Zmo-zU-1WM" firstAttribute="leading" secondItem="jb0-td-pYk" secondAttribute="leadingMargin" id="p2q-GS-Koa"/>
-                            <constraint firstItem="Gs7-Ab-iCm" firstAttribute="top" secondItem="zG5-RS-rFh" secondAttribute="bottom" constant="8" id="pi6-OJ-IUH"/>
-                            <constraint firstItem="zG5-RS-rFh" firstAttribute="top" secondItem="Zmo-zU-1WM" secondAttribute="bottom" constant="20" id="q4I-bf-Wn2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zmo-zU-1WM" secondAttribute="trailing" id="u2V-FM-WKy"/>
                         </constraints>
                         <variation key="default">
@@ -503,16 +494,40 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3G-rE-Zv6">
                                 <rect key="frame" x="240" y="362" width="120" height="30"/>
                                 <state key="normal" title="Confirmar pedido"/>
+                                <connections>
+                                    <action selector="confirmarPedido:" destination="i3l-GX-Jk3" eventType="touchUpInside" id="o38-r8-IPZ"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYR-Jq-WFg">
+                                <rect key="frame" x="269" y="439" width="62" height="30"/>
+                                <state key="normal" title="Regresar"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="cnw-uc-YmJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Si deseas regresar, deberás crear de nuevo tu pizza" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUB-oT-CF1">
+                                <rect key="frame" x="186" y="390" width="229" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="Zcp-KK-q0Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="oYR-Jq-WFg" firstAttribute="top" secondItem="t3G-rE-Zv6" secondAttribute="bottom" constant="47" id="0qj-hN-fFu"/>
                             <constraint firstItem="NEY-HR-LCg" firstAttribute="centerX" secondItem="2kf-Ey-HKZ" secondAttribute="centerX" id="480-Xu-lkd"/>
+                            <constraint firstItem="UUB-oT-CF1" firstAttribute="centerX" secondItem="t3G-rE-Zv6" secondAttribute="centerX" id="7Ki-Mh-IOU"/>
+                            <constraint firstItem="oYR-Jq-WFg" firstAttribute="centerX" secondItem="2kf-Ey-HKZ" secondAttribute="centerX" id="Ayo-KE-WeD"/>
                             <constraint firstItem="9OO-ij-aip" firstAttribute="top" secondItem="kae-De-Q9s" secondAttribute="bottom" constant="68" id="Dax-je-3GC"/>
                             <constraint firstItem="NEY-HR-LCg" firstAttribute="top" secondItem="9OO-ij-aip" secondAttribute="bottom" constant="44" id="NpP-Kk-8kj"/>
                             <constraint firstItem="t3G-rE-Zv6" firstAttribute="centerX" secondItem="2kf-Ey-HKZ" secondAttribute="centerX" id="Nuf-gD-dsx"/>
+                            <constraint firstItem="oYR-Jq-WFg" firstAttribute="top" secondItem="UUB-oT-CF1" secondAttribute="bottom" constant="3" id="ToU-vE-4C3"/>
                             <constraint firstItem="9OO-ij-aip" firstAttribute="centerX" secondItem="NEY-HR-LCg" secondAttribute="centerX" id="mdU-7N-Y82"/>
                             <constraint firstItem="t3G-rE-Zv6" firstAttribute="top" secondItem="NEY-HR-LCg" secondAttribute="bottom" constant="8" id="oO6-pt-gLg"/>
+                            <constraint firstItem="UUB-oT-CF1" firstAttribute="top" secondItem="NEY-HR-LCg" secondAttribute="bottom" constant="36" id="wjg-Me-kUI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pedido" id="E3L-yU-jFf"/>
@@ -525,7 +540,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2S9-is-Ugh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1258" y="1047"/>
+            <point key="canvasLocation" x="1258" y="927"/>
         </scene>
     </scenes>
     <resources>

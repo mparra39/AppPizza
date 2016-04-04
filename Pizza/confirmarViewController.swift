@@ -37,6 +37,30 @@ class confirmarViewController: UIViewController {
     }
     
 
+    @IBAction func confirmarPedido(sender: AnyObject) {
+        
+        if (ingrediente.text == "") || (masa.text == "") || (queso.text == "") || (tamaño.text == "") {
+            print("Vacio")
+            let alertController = UIAlertController(title: "Aviso", message: "Hay campos vacios. Favor de llenar los campos que faltan.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+        }else{
+            let alertController = UIAlertController(title: "Aviso", message: "Tu pizza ha pasado a la cocina, saldrá en 20 minutos.", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let sigVista = segue.destinationViewController as! ViewController
+        sigVista.regreso += 1
+    }
+    
     
     /*
     // MARK: - Navigation

@@ -134,6 +134,7 @@ class ingredientesViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
             let sigVista = segue.destinationViewController as! confirmarViewController
         if jamonClick == true {
             sigVista.ingredientes += "Jamón, "

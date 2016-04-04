@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var tipoDeMasa:String = ""
     var tipoDeQueso:String = ""
     
-    var boton = 0
+    var regreso = 0
     
     @IBOutlet weak var continuar: UIButton!
     
