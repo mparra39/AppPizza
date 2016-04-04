@@ -12,6 +12,8 @@
 		832FD3191CB1D0DE002A0BE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832FD3171CB1D0DE002A0BE7 /* Main.storyboard */; };
 		832FD31B1CB1D0DE002A0BE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832FD31A1CB1D0DE002A0BE7 /* Assets.xcassets */; };
 		832FD31E1CB1D0DE002A0BE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832FD31C1CB1D0DE002A0BE7 /* LaunchScreen.storyboard */; };
+		832FD32A1CB1E5B7002A0BE7 /* ingredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FD3291CB1E5B7002A0BE7 /* ingredientesViewController.swift */; };
+		832FD32C1CB20CD6002A0BE7 /* confirmarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FD32B1CB20CD6002A0BE7 /* confirmarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		832FD31A1CB1D0DE002A0BE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832FD31D1CB1D0DE002A0BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		832FD31F1CB1D0DE002A0BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832FD3291CB1E5B7002A0BE7 /* ingredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ingredientesViewController.swift; sourceTree = "<group>"; };
+		832FD32B1CB20CD6002A0BE7 /* confirmarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = confirmarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				832FD31A1CB1D0DE002A0BE7 /* Assets.xcassets */,
 				832FD31C1CB1D0DE002A0BE7 /* LaunchScreen.storyboard */,
 				832FD31F1CB1D0DE002A0BE7 /* Info.plist */,
+				832FD3291CB1E5B7002A0BE7 /* ingredientesViewController.swift */,
+				832FD32B1CB20CD6002A0BE7 /* confirmarViewController.swift */,
 			);
 			path = Pizza;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					832FD30F1CB1D0DE002A0BE7 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Z63GM6CBUH;
 					};
 				};
 			};
@@ -136,7 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				832FD3161CB1D0DE002A0BE7 /* ViewController.swift in Sources */,
+				832FD32C1CB20CD6002A0BE7 /* confirmarViewController.swift in Sources */,
 				832FD3141CB1D0DE002A0BE7 /* AppDelegate.swift in Sources */,
+				832FD32A1CB1E5B7002A0BE7 /* ingredientesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Pizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uLab.Pizza;
@@ -262,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Pizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uLab.Pizza;
